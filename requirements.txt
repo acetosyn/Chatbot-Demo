@@ -3,3 +3,5 @@ langchain_anthropic
 langchain_groq
 langchain_community
 streamlit
+duckduckgo-Search
+Wikipedia
