@@ -19,7 +19,13 @@ from datetime import datetime
 import dotenv
 
 
+def load_css(file_path):
+    with open(file_path, "r") as f:
+        css = f.read()
+        st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
+# Call the function to load CSS
+load_css("chat.css")
 
 st.title("ACE BOT")
 search = DuckDuckGoSearchRun()
